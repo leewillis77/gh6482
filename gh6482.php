@@ -42,18 +42,18 @@ class gh6482 {
 			// With the dependencies set statically as below (bad I know - but as per the example code), this throws an
 			// error if compiled against Woocommerce 5.1.0-rc.1, but *works* if compiled against
 			// woocommerce-admin (2.2.0-dev).
-			//			array(
-			//				'wp-i18n',
-			//				'wp-hooks',
-			//				'wp-api-fetch',
-			//				'wp-components',
-			//				'wc-components'
-			//			),
-			//			time(),
+			array(
+				'wp-i18n',
+				'wp-hooks',
+				'wp-api-fetch',
+				'wp-components',
+				'wc-components'
+			),
+			time(),
 			// Pulling in the dependencies / version from the generated .asset.php file works in both cases.
 			//
-			$asset_file['dependencies'],
-			$asset_file['version'],
+			// $asset_file['dependencies'],
+			// $asset_file['version'],
 			true
 		);
 
