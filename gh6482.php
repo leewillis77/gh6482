@@ -38,7 +38,7 @@ class gh6482 {
 		$asset_file = require plugin_dir_path( __FILE__ ) . 'js/dist/setup-tasks.asset.php';
 		wp_register_script(
 			'my-setup-tasks',
-			plugins_url( basename( $this->base_dir ) . 'js/dist/setup-tasks.js' ),
+			plugins_url( basename( $this->base_dir ) . '/js/dist/setup-tasks.js' ),
 			// With the dependencies set statically as below (bad I know - but as per the example code), this throws an
 			// error if compiled against Woocommerce 5.1.0-rc.1, but *works* if compiled against
 			// woocommerce-admin (2.2.0-dev).
