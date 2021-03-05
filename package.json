@@ -1,0 +1,17 @@
+{
+  "name": "gh6482",
+  "devDependencies": {
+    "@wordpress/scripts": "^12.5.0"
+  },
+  "dependencies": {
+    "@woocommerce/components": "^5.1.2",
+    "@woocommerce/navigation": "^5.2.0",
+    "@wordpress/viewport": "^2.25.7"
+  },
+  "scripts": {
+    "build": "wp-scripts build",
+    "dev": "wp-scripts start",
+    "start": "wp-scripts start",
+    "lint:js": "wp-scripts lint-js"
+  }
+}
